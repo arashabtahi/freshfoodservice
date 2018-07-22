@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fresh Food Delivery</title>
+
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<style>
+    body,html{
+        font-family: 'Oswald', sans-serif;
+        background:url("background.jpg") no-repeat center;
+        background-size: cover;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+
+
+    }
+
+    .top-header{
+        font-size: 3em;
+    }
+
+    .section1{
+        background-size: cover;
+        height: 600px;
+        color: white;
+
+    }
+
+    .section2{
+        font-size: 2em;
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        opacity: .75;
+
+    }
+
+    #myalert{
+        display: none;
+    }
+
+    .closed{
+        background-color: #DFF0D8;
+        border: none;
+        float: right;
+    }
+</style>
+<body>
+<nav class="navbar navbar-default fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Eat Fresh Stay Fresh</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li ><a class="couponalert" href="#">Coupons</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+
+<div class="alert alert-success" id="myalert" role="alert" align="center" style="font-size:2em">
+<button style="font-size:2em" type="button" class="closed">
+  <span aria-hidden="true">&times;</span>
+</button>
+  <strong><u>Available Coupons</u><br> Use this <a href="https://takeoutkit.com?rfsn=1589618.63e1cd&utm_source=refersion&utm_medium=affiliate&utm_campaign=1589618.63e1cd">LINK</a> to receive 10 percent off of your first Order from Takeout Kit</strong>
+</div>
+
+<section class="section1">
+  <div class="container">
+    <div class="row" align="center">
+        <div class="col-md-12 top-header">Stay Healthy and Energetic With These Top Food Delivery Services </div>
+
+
+    </div>
+ </div>
+</section>
+
+<section class="section2">
+<div class="row" align="center">
+    <div class="col-md-12">
+        <a href="https://takeoutkit.com?rfsn=1589618.63e1cd&utm_source=refersion&utm_medium=affiliate&utm_campaign=1589618.63e1cd">Takeout Kit</a>
+    </div>
+    <div class="container">
+    <div class="row" style="font-size:.76em" >
+        <div class="col-md-12" >
+Takeout Kit is a great choice if you love to try out food from different parts of the world. With 17 cuisines to choose from you can never run out of options. Takeout Kit will ship you fresh ingredients on demand with no subscription necessary. You can get 10 percent off on your first order by <a href="https://takeoutkit.com?rfsn=1589618.63e1cd&utm_source=refersion&utm_medium=affiliate&utm_campaign=1589618.63e1cd">CLICKING HERE</a> and using their email.
+        </div>
+    </div>
+  </div>
+</div>
+<br><br>
+
+ <div class="row" align="center">
+    <div class="col-md-12">
+    <a href="https://www.hellofresh.com/">HelloFresh</a>
+    </div>
+
+<div class="container">
+    <div class="row" style="font-size:.76em">
+        <div class="col-md-12">HelloFresh is on a mission to combine healthier eating with convenience and introduce a modern approach to meal planning and shopping. Their meal kits include amazing recipes, high quality ingredients sourced straight from the farm, and gourmet meals that you can cook at in 30 minutes. They have classic, vegetarian, and family meal plans with weekly deliveries at no extra cost.
+    </div>
+  </div>
+ </div>
+</div>
+<br><br>
+<div class="row" align="center">
+    <div class="col-md-12">
+    <a href="https://www.homechef.com/">Home Chef
+</a>
+    </div>
+ <div class="container">
+    <div class="row" style="font-size:.76em">
+        <div class="col-md-12">Home Chef makes home cooking easy. Customers choose from 8+ new chef inspired recipes each week then fresh ingredients are delivered right to their door. Each kit is perfectly measure to you don’t have to go to the grocery store, worry about waste, and you can start cooking right away. Home Chef even created an algorithm to curate the best recipes that fit your meal preferences.
+
+
+       </div>
+      </div>
+   </div>
+</div>
+<br><br>
+<div class="row" align="center">
+   <div class="col-md-12">
+    <a href="https://www.blueapron.com/">Blue Apron</a>
+    </div>
+</div>
+<div class="container">
+    <div class="row" style="font-size:.76em;">
+        <div class="col-md-12">
+            Blue Apron only supplies the best ingredients. They believe in setting a high standard for their ingredients so they work directly with family run farms and artisanal purveyors. Their ingredients are free from antibiotics or hormones, sustainably sourced, and Non-GMO. Their mission is to make incredible home cooking accessible to everyone.  You can choose from 2 person or family meal kits.
+        </div>
+    </div>
+
+</div>
+</section>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+
+    $('.couponalert').on("click", function(){
+
+        $('#myalert').fadeIn(2000)
+
+    })
+
+    $('.closed').click(function() {
+     $('#myalert').css("display", "none");
+     });
+
+
+});
+</script>
+</body>
+</html>
